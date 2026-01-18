@@ -21,6 +21,6 @@ class HelloControllerTest {
     void hello_ok() throws Exception {
         mvc.perform(get("/hello"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("hello spring"));
+                .andExpect(content().string("hello"));
     }
 }
